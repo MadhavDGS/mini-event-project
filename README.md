@@ -1,4 +1,4 @@
-# mini event platform - mern stack
+# AI mini event platform - mern stack
 
 full stack event management app built with mongodb, express, react, and node. users can create events, rsvp to events, and manage attendance with proper concurrency handling.
 
