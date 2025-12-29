@@ -4,8 +4,10 @@ full stack event management app built with mongodb, express, react, and node. us
 
 ## live demo
 
-- frontend: [deployed url here]
-- backend api: [deployed url here]
+- frontend: https://mini-event-project-eta.vercel.app
+- backend api: https://mini-event-project.onrender.com
+
+# Also used uptimebot so render server doesnt sleep 
 
 ## features implemented
 
@@ -175,7 +177,7 @@ router.post('/:id/join', auth, async (req, res) => {
 
 ### testing
 
-#login with these detaiils to test
+# login with these detaiils to test
 
 sreemadhav.reply@gmail
 Pass: 123456
