@@ -233,19 +233,3 @@ mini-event-platform/
 
 ### ai
 - POST /api/ai/enhance - enhance description (protected)
-
-## deployment
-
-### backend (render or railway)
-1. create new web service
-2. connect github repo
-3. build command: `cd server && npm install`
-4. start command: `cd server && npm start`
-5. add env variables
-
-### frontend (vercel or netlify)
-1. create new site
-2. connect github repo
-3. build command: `cd client && npm run build`
-4. publish directory: `client/dist`
-5. update API_URL in `client/src/context/AuthContext.jsx`
