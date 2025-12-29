@@ -47,7 +47,7 @@ full stack event management app built with mongodb, express, react, and node. us
 - mongodb atlas
 
 
-```
+
 
 ### 2. backend setup
 
@@ -121,7 +121,6 @@ router.post('/:id/join', auth, async (req, res) => {
     const eventId = req.params.id;
     const userId = req.user._id;
     
-    // lock event for this transaction
     const event = await Event.findById(eventId).session(session);
     
     if (!event) {
@@ -175,6 +174,11 @@ router.post('/:id/join', auth, async (req, res) => {
 - **consistency** - database stays correct, never goes over capacity
 
 ### testing
+
+#login with these detaiils to test
+
+sreemadhav.reply@gmail
+Pass: 123456
 
 to test:
 1. open multiple browser tabs
@@ -243,15 +247,3 @@ mini-event-platform/
 3. build command: `cd client && npm run build`
 4. publish directory: `client/dist`
 5. update API_URL in `client/src/context/AuthContext.jsx`
-
-## author
-
-sree madhav  
-sreemadhav.reply@gmail.com
-
-## acknowledgments
-
-- mongodb atlas for database
-- cloudinary for image storage
-- google gemini ai
-- daisyui for ui components
