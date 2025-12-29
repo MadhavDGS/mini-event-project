@@ -8,12 +8,11 @@ export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem('token'));
   const [loading, setLoading] = useState(true);
 
-  // base url for api
-  const API_URL = 'http://localhost:5001/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://mini-event-project.onrender.com/api' || 'http://localhost:5001/api';
 
   useEffect(() => {
     if (token) {
-      // set token in axios header
+
       axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
       loadUser();
     } else {
@@ -21,7 +20,7 @@ export const AuthProvider = ({ children }) => {
     }
   }, [token]);
 
-  // load current user
+
   const loadUser = async () => {
     try {
       const res = await axios.get(`${API_URL}/auth/me`);
@@ -33,7 +32,6 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  // register function
   const register = async (name, email, password) => {
     try {
       const res = await axios.post(`${API_URL}/auth/register`, {
@@ -53,7 +51,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  // login function
+
   const login = async (email, password) => {
     try {
       const res = await axios.post(`${API_URL}/auth/login`, {
@@ -72,7 +70,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  // logout function
+
   const logout = () => {
     localStorage.removeItem('token');
     setToken(null);
