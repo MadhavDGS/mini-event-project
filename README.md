@@ -50,10 +50,30 @@ Also used uptimebot so render server doesnt sleep
 ![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
 ![Google AI](https://img.shields.io/badge/Google_AI-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
+**database:**
 
+![MongoDB Atlas](https://img.shields.io/badge/MongoDB_Atlas-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 
+**deployment:**
 
-### 2. backend setup
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
+
+## prerequisites
+
+- nodejs (v16 or higher)
+- mongodb atlas account
+- cloudinary account  
+- google ai studio account (optional for ai features)
+
+## local setup
+
+### 1. clone repo
+
+```bash
+git clone https://github.com/MadhavDGS/mini-event-project.git
+cd mini-event-platform
+```
 
 ```bash
 cd server
