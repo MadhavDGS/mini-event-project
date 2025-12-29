@@ -7,7 +7,7 @@ full stack event management app built with mongodb, express, react, and node. us
 - frontend: https://mini-event-project-eta.vercel.app
 - backend api: https://mini-event-project.onrender.com
 
-# Also used uptimebot so render server doesnt sleep 
+Also used uptimebot so render server doesnt sleep 
 
 ## features implemented
 
